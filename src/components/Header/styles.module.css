@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text-primary);
     position: relative;
     background-color: var(--background-color);
     color: var(--text-primary);
