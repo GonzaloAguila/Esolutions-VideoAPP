@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 import { fetchCategories, fetchCategory } from '../../store/actions/categories';
 import styles from './styles.module.css';
 import SportsEsportsRoundedIcon from '@material-ui/icons/SportsEsportsRounded';
@@ -23,18 +23,18 @@ const Categories = () => {
                 categories.length > 0 &&
                 categories.map((category) => {
                     return (
-                        <Link to={`/categories/${category.name}`}>
-                         <button className={styles.btn}>
-                            <div className={styles.category}>
-                                {category.name === 'videogames' ? <SportsEsportsRoundedIcon fontSize='large' color='primary' /> : null}
-                                {category.name === 'music' ? <PlayCircleFilledRoundedIcon fontSize='large' color='primary' /> : null}
-                                {category.name === 'cocina' ? <LocalDiningRoundedIcon fontSize='large' color='primary' /> : null}
-                                {category.name === 'tutoriales' ? <GroupRoundedIcon fontSize='large' color='primary' /> : null}
-                                {category.name === 'coding' ? <CodeRoundedIcon fontSize='large' color='primary' /> : null}
-                                <h2>{category.name}</h2>
-                            </div>
-                        </button>
-                        </Link>
+                        <div className={styles.category}>
+                            {category.name === 'videogames' ? <SportsEsportsRoundedIcon fontSize='large' color='primary' /> : null}
+                            {category.name === 'music' ? <PlayCircleFilledRoundedIcon fontSize='large' color='primary' /> : null}
+                            {category.name === 'cocina' ? <LocalDiningRoundedIcon fontSize='large' color='primary' /> : null}
+                            {category.name === 'tutoriales' ? <GroupRoundedIcon fontSize='large' color='primary' /> : null}
+                            {category.name === 'coding' ? <CodeRoundedIcon fontSize='large' color='primary' /> : null}
+                            <Link to={`/categories/${category.name}`}>
+                                <button className={styles.btn}>
+                                    <h2>{category.name}</h2>
+                                </button>
+                            </Link>
+                        </div>
                     );
                 })}
         </div>

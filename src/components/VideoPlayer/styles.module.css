@@ -1,11 +1,12 @@
 .videosItem{
     max-width: 320px;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid var(--text-secondary);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+    color: var(--text-primary);
+    background-color: var(--background-color);
  }
 
 .content{

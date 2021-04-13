@@ -1,26 +1,42 @@
 .catContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 25px;
+    background-color: var(--background-color);
+    height: 100vh;
 }
 
 .category{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 25px;
     margin: 0 10px;
+    border: 1px solid var(--text-primary);
+    height: 110px;
+    width: 150px;
+    border-radius: 10px;
+  
 }
 
 .btn{
     margin: 0 10px;
-    cursor: pointer
-}
-.btn:focus{
-    border: 2px solid black;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    border: none;
+    padding: 10px 15px;
 }
 
+.btn:hover {
+    color: #00a0c6;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+  }
+
 .icon {
-    height: 150px;
+    height: 300px;
 }
