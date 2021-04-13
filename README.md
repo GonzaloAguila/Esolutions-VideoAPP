@@ -12,6 +12,6 @@ Como opcion alternativa, correr en dos terminales diferentes: npm run server / n
 
 ### Para ver el JSON que devuelve la api, pegarle a los siguientes endpoints:
 
-http://localhost:9000//api/categories
-http://localhost:9000//api/categories/"name"
-http://localhost:9000//api/videos
+1) JSON pedido en el challenge: http://localhost:9000//api/categories 
+2) Buscar una categoria: http://localhost:9000//api/categories/"name" 
+3) Ver todos los videos: http://localhost:9000//api/videos
