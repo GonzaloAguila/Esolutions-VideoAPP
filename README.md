@@ -10,7 +10,7 @@
 En localhost:4000 estara corriendo el cliente, mientras que en el puerto 9000 correra la api.
 
 *Es necesesario tener instalado globalmente 'Concurrently': npm install -g concurrently
-Como opcion alternativa, correr en dos terminales diferentes: npm run server / npm run client
+Como opcion alternativa (sobre todo en MAC y Linux), correr en dos terminales diferentes: npm run server / npm run client
 
 ### Para ver el JSON que devuelve la api, pegarle a los siguientes endpoints:
 
